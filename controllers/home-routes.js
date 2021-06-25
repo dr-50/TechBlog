@@ -1,22 +1,19 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const { Post } = require('../models');
 
 // get all posts for homepage
-router.get('/', (req, res) => {
-    // Post.findAll({
-    // }).then(dbPostData => {
-    //     const posts=dbPostData.map(post => post.get({ plain:true }));
+router.get('/', async (req, res) => {
+    console.log(`===========
+    get route called
+    ==============`)
+    // exports.index = function(request,response,next){
+    //     Post.findAll().then(dbTest => {console.log(dbTest)}).catch(err=>{console.log(err)})    
+    //  }
+    // const data = await Post.findAll()
+    Post.findAll().then(data => console.log(data))    
 
-    //     res.render('homepage', {
-    //         posts,
-    //         loggedIn: req.session.loggedIn
-    //     });
-    // }).catch(err => {
-    //     console.log(err);
-    //     res.status(500).join(err);
-    // })
-    Post.findAll().then((dbPostData) => {res.json(dbPostData)})
+
 })
 
 module.exports = router;
