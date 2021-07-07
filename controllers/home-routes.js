@@ -11,7 +11,11 @@ router.get('/', async (req, res) => {
     //     Post.findAll().then(dbTest => {console.log(dbTest)}).catch(err=>{console.log(err)})    
     //  }
     // const data = await Post.findAll()
-    Post.findAll().then(data => console.log(data))    
+    Post.findAll().then(data => res.json(data)
+    .catch(err => {
+        console.log(err);
+        res.status(500).json(err)
+    }))    
 
 
 })
