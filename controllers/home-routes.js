@@ -11,13 +11,17 @@ router.get('/', async (req, res) => {
     //     Post.findAll().then(dbTest => {console.log(dbTest)}).catch(err=>{console.log(err)})    
     //  }
     // const data = await Post.findAll()
-    Post.findAll().then(data => res.json(data)
+    Post.findAll().then(data => {
+        const posts = data.map(post => post.get({ plain: true }));
+        res.render('homepage', {
+        posts,
+        loggedIn: req.session.loggedIn
+    });
+})
     .catch(err => {
         console.log(err);
         res.status(500).json(err)
-    }))    
-
-
-})
+    }); 
+});
 
 module.exports = router;
