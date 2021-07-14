@@ -22,14 +22,20 @@ header a {
     -.2px .2px 0 blanchedalmond,
     .2px .2px 0 blanchedalmond ;
     font-size: 18px;
+    
 
 }
 
 header button {
     border: none;
     background-color: var(--primary);
-    color: var(--secondary);
+    color: var(--tertiary);
+    text-shadow: -.2px -.2px 0 blanchedalmond,
+    .2px -.2px 0 blanchedalmond,
+    -.2px .2px 0 blanchedalmond,
+    .2px .2px 0 blanchedalmond ;
     font-size: 18px;
+
 }
 
 .login {
@@ -87,4 +93,13 @@ input {
     -.2px .2px 0 blanchedalmond,
     .2px .2px 0 blanchedalmond ;
     font-weight: bold;
+}
+
+
+ol li {
+    list-style-type: none;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+
 }
