@@ -8,17 +8,17 @@ const postdata = [
     },
     {
         title: 'testTitle2',
-        post_body: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+        post_body: 'Test Body 2',
         user_id: 2
     },
     {
         title: 'testTitle3',
-        post_body: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+        post_body: 'Test Body 4',
         user_id: 3
     },
     {
         title: 'testTitle4',
-        post_body: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+        post_body: 'Test Body 4',
         user_id: 1
     }
 ]
