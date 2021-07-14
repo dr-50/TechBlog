@@ -3,6 +3,8 @@
 ## Description
 A site for tech related topics to be posted by users
 
+![screenshot](./public/images/dashboard.jpg)
+
 Built With: 
 * handlebars
 * CSS
