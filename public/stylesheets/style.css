@@ -2,6 +2,7 @@
     --primary: rgb(56, 2, 2);
     --secondary: rgba(107, 150, 107, 0.466);
     --tertiary: rgba(107, 150, 107, 0.644);
+    --textcolor: rgb(255, 235, 205);
 }
 
 header {
@@ -62,7 +63,7 @@ header button {
     text-shadow: -.2px -.2px 0 blanchedalmond,
     .2px -.2px 0 blanchedalmond,
     -.2px .2px 0 blanchedalmond,
-    .2px .2px 0 blanchedalmond ;
+    .2px .2px 0 rgb(255, 235, 205) ;
     font-weight: bold;
 }
 
@@ -95,11 +96,27 @@ input {
     font-weight: bold;
 }
 
+div .title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--primary);
+    color: var(--textcolor);
+
+}
 
 ol li {
     list-style-type: none;
     margin: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
+    border: 2px black solid;
+    width: 100%;
+}
 
+li {
+    width: 100%;
 }
