@@ -3,22 +3,22 @@ const { Post } = require('../models');
 const postdata = [
     {
         title: 'testTitle1',
-        post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+        post_body: 'Test Body 1',
         user_id: 1
     },
     {
         title: 'testTitle2',
-        post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+        post_body: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
         user_id: 2
     },
     {
         title: 'testTitle3',
-        post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+        post_body: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
         user_id: 3
     },
     {
         title: 'testTitle4',
-        post_url: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
+        post_body: 'https://buzzfeed.com/in/imperdiet/et/commodo/vulputate.png',
         user_id: 1
     }
 ]
