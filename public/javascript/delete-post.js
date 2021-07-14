@@ -1,5 +1,3 @@
-const { response } = require("express");
-
 async function deleteFormHandler(event) {
     event.preventDefault();
 
@@ -17,4 +15,4 @@ async function deleteFormHandler(event) {
     }
 }
 
-document.querySelector('.deleteBtn').addEventListener('click', deleteFormHandler);
+document.querySelector('.deletePost').addEventListener('click', deleteFormHandler);

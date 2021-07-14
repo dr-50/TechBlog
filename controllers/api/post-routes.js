@@ -26,7 +26,6 @@ router.get('/', (req, res) => {
 })
 
 router.put('/:id', withAuth, (req, res) => {
-    console.log('called')
     Post.update(
         {
             title: req.body.title,
@@ -60,4 +59,22 @@ router.post('/', withAuth, (req, res) => {
         res.status(500).json(err)
     })
 })
+
+router.delete('/:id', withAuth, (req, res) => {
+    Post.destroy({
+        where: {
+            id: req.params.id
+        }
+    }).then(dbPostData => {
+        if(!dbPostData) {
+            res.status(404).json({ message: "no post found with this id"});
+            return;
+        }
+        res.json(dbPostData);
+    }).catch(err => {
+        console.log(err);
+        res.status(500).json(err);
+    })
+})
+
 module.exports = router;

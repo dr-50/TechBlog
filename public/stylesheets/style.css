@@ -111,19 +111,29 @@ div .title{
     color: var(--textcolor);
 }
 
+div .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
 
 ol li {
     list-style-type: none;
     margin: 10px;
     padding: 5px;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     border: 2px black solid;
-    width: 100%;
+    width: 70%;
+    justify-content: space-between;
 }
 
 li {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 #post-title {
@@ -133,4 +143,21 @@ li {
 #post_body {
     width: 400px;
     height: 150px;
+}
+
+label {
+    margin-right: 5px;
+    align-items: flex-start;
+}
+
+.new-post-form {
+    display: table-caption;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* justify-content: start; */
+    align-content: center;
+}
+
+.new-post-form div {
+    margin: 10px;
 }
